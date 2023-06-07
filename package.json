@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sass": "sass src/styles/index.scss:src/styles/index.css",
+    "sass-w": "sass --watch src/styles/index.scss:src/styles/index.css"
   },
   "dependencies": {
     "@types/node": "20.2.5",

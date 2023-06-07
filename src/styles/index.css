@@ -1,0 +1,69 @@
+.html {
+  font-size: 16;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-catskill-brown);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-lake-retba-pink:#e975e9;
+  --color-black: #fff9f9;
+  --color-catskill-brown:#050505;
+}
+
+.ButtonEffect {
+  background: var(--color-lake-retba-pink);
+  color: var(--color-black);
+  border: 2px solid var(--colo-lake-retba-pink);
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 2rem;
+  overflow: hidden;
+  position: relative;
+  --left:0;
+  --top:0;
+}
+.ButtonEffect:not(.active) .capa {
+  display: none;
+}
+.ButtonEffect .capa {
+  position: absolute;
+  transition: opacity 2s;
+  z-index: 1;
+  left: var(--left);
+  top: var(--top);
+  animation: animloader 0.5s linear infinite;
+  box-sizing: border-box;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: #FFF;
+}
+@keyframes animloader {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(160);
+    opacity: 0;
+  }
+}
+
+.ContentButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+}
+
+/*# sourceMappingURL=index.css.map */
